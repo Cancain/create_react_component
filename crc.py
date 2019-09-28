@@ -19,4 +19,5 @@ filename = componentName + fileExtension
 f = open(filename, "w+")
 f.write("import React from 'react'\n\n")
 exportLine = "export default function {}".format(componentName)
-f.write(exportLine + "()" " {\nreturn()\n}")
+finalText = exportLine + "()" + " {\n    return()\n}"
+f.write(finalText)
